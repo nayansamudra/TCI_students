@@ -11072,9 +11072,11 @@ fieldset:disabled .btn {
   transform: translateY(0);
 }
 .card {
-  box-shadow: 1rem 1rem 2.5rem 0 rgba(0, 0, 0, 0.05);
   margin-bottom: 1rem;
   border-radius: 0.313rem;
+}
+.theme-color-default.light .card {
+  box-shadow: 1rem 1rem 2.5rem 0 rgba(0, 0, 0, 0.05);
 }
 .card .card-header {
   margin-bottom: 0;
@@ -24117,6 +24119,23 @@ h6 {
 .d-inline-flex.me-4 {
   padding: 5px;
   border-radius: 5px;
+}
+
+/*-- classes page --*/
+.card-title.blinking-text {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*-- Feedback Page --*/
