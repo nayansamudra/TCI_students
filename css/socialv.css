@@ -23911,7 +23911,9 @@ button.bg-soft-dark:hover {
   color: #2dcebe !important;
 }
 
-/*-- community page --*/
+/*---------------
+ community page 
+ --------------*/
 .widget {
   margin-bottom: 1.5em;
   display: inline-block;
@@ -24035,12 +24037,76 @@ h6 {
   }
 }
 
-/*-- My Post Page --*/
+/*----------------------
+ TCI-DHAN Collaboration 
+----------------------*/
+@media (max-width:1210px) {
+  #Heading_col #Heading {
+    font-size: xx-large !important;
+  }
+}
+
+@media (max-width:768px) {
+  #Heading_col #Heading {
+    font-size: x-large !important;
+  }
+  #banner_image div{
+    font-size: large !important;
+  }
+  #Tci_logo_collab_page{
+    width: 60px !important;
+  }
+  #dhan_logo_collab_page {
+    width: 100px !important;
+  }
+}
+
+@media (max-width:530px) {
+  #tci_logo_col,
+  #Heading_col,
+  #dhan_logo_col{
+    padding: 0 !important;
+}
+  #Heading_col #Heading {
+    font-size: large !important;
+  }
+  #banner_image div{
+    font-size: 16px !important;
+  }
+  #Tci_logo_collab_page{
+    width: 40px !important;
+  }
+  #dhan_logo_collab_page {
+    width: 70px !important;
+  }
+}
+
+@media (max-width:390px) {
+  #Heading_col #Heading {
+    font-size: 18px !important;
+  }
+  #Heading_col,
+  #dhan_logo_col{
+    padding-right: 5px !important;
+}
+  #Tci_logo_collab_page{
+    width: 50px !important;
+  }
+  #dhan_logo_collab_page {
+    width: 80px !important;
+  }
+}
+
+/*-------------
+ My Post Page 
+ ------------*/
 .delete_dropdown .dropdown-menu.show {
   inset: 0px 0px auto auto !important; 
 }
 
-/*-- Support Page --*/
+/*------------
+ Support Page 
+ ------------*/
 .theme-color-default.dark .wp-block-group__inner-container h2 span {
   color: #50b5ff !important
 }
@@ -24073,7 +24139,9 @@ h6 {
   padding-bottom: 2px;
 }
 
-/*-- Job Page --*/
+/*--------
+ Job Page 
+---------*/
 .theme-color-default.dark .wp-block-group__inner-container h2 span {
   color: #50b5ff !important
 }
@@ -24086,7 +24154,9 @@ h6 {
   }
 }
 
-/*-- nism page --*/
+/*---------
+ nism page 
+ --------*/
 .msg_links {
   color: #000;
   font-weight: 500;
@@ -24121,7 +24191,9 @@ h6 {
   border-radius: 5px;
 }
 
-/*-- classes page --*/
+/*---------- 
+classes page 
+-----------*/
 .card-title.blinking-text {
   animation: blink 1s infinite;
 }
@@ -24138,7 +24210,9 @@ h6 {
   }
 }
 
-/*-- Feedback Page --*/
+/*------------
+ Feedback Page 
+ -------------*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -24148,7 +24222,9 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-/*------------- Toast CSS -----------*/
+/*----------
+Toast CSS 
+-----------*/
 .toast.align-items-center.bg-warning,
 .toast-header.bg-warning {
   background-color: #fdcd85 !important;
@@ -24183,7 +24259,9 @@ input[type=number] {
   background: #712525 !important;
 }
 
-/*-- Common JS --*/
+/*--------
+Common JS 
+---------*/
 .toast-container.position-fixed {
   z-index: 1200;
 }

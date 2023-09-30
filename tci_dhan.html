@@ -20,6 +20,11 @@
    <link rel="stylesheet" href="vendor/flatpickr/dist/flatpickr.min.css" />
    <!-- Sweetlaert2 css -->
    <link rel="stylesheet" href="vendor/sweetalert2/dist/sweetalert2.min.css" />
+   <!-- font-awesome -->
+   <link rel="stylesheet" href="vendor/@fortawesome/fontawesome-free/css/all.min.css" />
+
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
    <!-- vanillajs css -->
    <link rel="stylesheet" href="vendor/vanillajs-datepicker/dist/css/datepicker.min.css">
@@ -31,7 +36,7 @@
          font-variation-settings:
             'FILL' 0,
             'wght' 600,
-            'GRAD' 0, 
+            'GRAD' 0,
             'opsz' 24
       }
    </style>
@@ -74,7 +79,7 @@
                      placeholder="Search here...">
                   <a class="d-lg-none d-flex" href="javascript:void(0);" data-bs-toggle="modal"
                      data-bs-target="#exampleModalFullscreenSm">
-                     <span class="matesrial-symbols-outlined">search</span>
+                     <span class="material-symbols-outlined">search</span>
                   </a>
                </form>
             </div>
@@ -256,7 +261,7 @@
                   </div>
                </li>
             </ul>
-            <div class=" border-top  top-header-responsive d-lg-none">
+            <div class=" border-top top-header-responsive d-lg-none">
                <ul class="list-unstyled p-0 m-0 menu-list">
                   <li class="icon-class" id="mode_nav_mobile">
                      <a href="javascript:void(0);" class="active">
@@ -307,7 +312,7 @@
                   </a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="tci_dhan.html">
+                  <a class="nav-link active" aria-current="page" href="tci_dhan.html">
                      <i class="icon material-symbols-outlined">
                         partner_exchange
                      </i>
@@ -315,7 +320,7 @@
                   </a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="my_post.html">
+                  <a class="nav-link " aria-current="page" href="my_post.html">
                      <i class="icon material-symbols-outlined">
                         post_add
                      </i>
@@ -323,7 +328,7 @@
                   </a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="support.html">
+                  <a class="nav-link " aria-current="page" href="support.html">
                      <i class="icon material-symbols-outlined">
                         support_agent
                      </i>
@@ -331,7 +336,7 @@
                   </a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="upgrade.html">
+                  <a class="nav-link " aria-current="page" href="upgrade.html">
                      <i class="icon material-symbols-outlined">
                         upgrade
                      </i>
@@ -355,7 +360,7 @@
                   </a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="classes.html">
+                  <a class="nav-link" aria-current="page" href="classes.html">
                      <i class="icon material-symbols-outlined">
                         school
                      </i>
@@ -363,7 +368,7 @@
                   </a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="feedback.html">
+                  <a class="nav-link" aria-current="page" href="feedback.html">
                      <i class="icon material-symbols-outlined">
                         feedback
                      </i>
@@ -377,67 +382,77 @@
       <div class="sidebar-footer"></div>
    </aside>
    <div>
-      <div class="position-relative"></div>
+      <div class="position-relative">
+      </div>
       <div id="content-page" class="content-page">
-         <div class="container mb-3 main_div_container">
-            <div class="row">
-               <div class="col-12">
-                  <div class="css_prefix-bp-banner text-start">
-                     <div class="css_prefix-bp-banner-box">
-                        <div class="heading-title white css_prefix-bp-banner-title">
-                           <h1 class="title m-0"> TCI Community </h1>
-                           <p class="css_prefix-subtitle mb-0"> The best place for the community to Share Trading &
-                              Investing Ideas </p>
+         <div class="container main_div_container">
+            <div class="row d-flex align-items-center Heading_Row">
+               <div class="mt-3 col-2 text-center" id="tci_logo_col"><img id="Tci_logo_collab_page"
+                     src="images/tci_logo.webp"></div>
+               <div class="mt-3 col-7 text-center" id="Heading_col">
+                  <span id="Heading" style="font-size: xxx-large;font-weight: 700;">TCI - DHAN Collaboration</span>
+               </div>
+               <div class="mt-3 col-3 text-center" id="dhan_logo_col"><img id="dhan_logo_collab_page"
+                     src="images/dhan-logo.png" width="150px">
+               </div>
+               <div class="mt-3 col-12" id="banner_image">
+                  <div class="mx-0 px-0 mt-3 text-center" style="font-size: x-large;font-weight: 700;">Use our referral
+                     link to open Dhan account in 10 minutes :
+                     <a href="https://invite.dhan.co/?join=TRED33" style="text-decoration: none;">Referral link</a>
+                  </div>
+               </div>
+            </div>
+            <div class="mt-5 row">
+               <div class="col-md-12">
+                  <div class="card card-block card-stretch card-height">
+                     <div class="card-header d-flex justify-content-between">
+                        <div class="header-title">
+                           <h4 class="card-title">Exclusive benefits when you open Dhan account through our link:</h4>
+                        </div>
+                     </div>
+                     <div class="card-body">
+                        <div class="user-post-data" id="msg_append">
+                           <div class="container-fluid">
+                              <div class="px-4 row">
+                                 <ol style="font-size: large !important;font-weight: 500;">
+                                    <li>Tredcode integration with Dhan account.</li>
+                                    <li>One-click chart opening and trade Index options directly from Tredcode.</li>
+                                    <li>Unlimited alerts placing facilities for pin point entries on tredcode intraday boost stocks.</li>
+                                    <li>Free strategy builder for options and ready-made strategies to execute directly with one click.</li>
+                                 </ol>
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-         </div>
-         <div class="container main_div_container">
-            <div class="row">
-               <div class="col-lg-12">
-                  <div class="container-fluid" id="post_content">
-                     <div class="row" id="append_here">
-                        <div class="col-sm-12">
-                           <div class="card card-block card-stretch card-height">
-                              <div class="card-header d-flex justify-content-between">
-                                 <div class="header-title">
-                                    <h4 class="card-title">Get Full Access</h4>
-                                 </div>
-                              </div>
-                              <div class="card-body">
-                                 <div class="user-post-data" id="msg_append">
-                                    <div class="container-fluid">
-                                       <div class="row">
-                                          <div class="col-md-12">
-                                             <div class="iq-message-body iq-other-user mb-3">
-                                                <div class="iq-chat-text d-flex justify-content-center">
-                                                   <div class="col-lg-8 align-items-center justify-content-start">
-                                                      <div class="iq-chating-content" style="max-width: 100%;">
-                                                         <div class="text-center"
-                                                            style="font-weight: 900; font-size: 18px;">Now you have
-                                                            full access to the Ultimate Mentorship program.</div>
-                                                         <div class="text-center mt-3 mb-2"
-                                                            style="font-weight: 400; font-size: 16px;">Visit
-                                                            tredcode.tradingcafeindia.com and login with
-                                                            <b>samudragupta201@gmail.com</b> & if you face any issue in
-                                                            login,
-                                                            refer to the below link
-                                                         </div>
-                                                         <a class="d-flex justify-content-center"
-                                                            style="color:#0088ff; font-size: 16px;" target="_blank"
-                                                            href="https://www.tradingcafeindia.in/loginii">
-                                                            <u>TCI-Students Login Issue</u>
-                                                         </a>
-                                                      </div>
-                                                   </div>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
+            <div class="mt-5 row">
+               <div class="col-md-5 hide d-flex align-items-center">
+                  <div class="videobg">
+                      <video id="videobg" src="images/Pc-New-11.m4v" autoplay="" loading="lazy" muted="" playsinline=""
+                          class="w-100 w3-display-center"></video>
+                  </div>
+              </div>
+               <div class="col-md-7">
+                  <div class="card card-block card-stretch card-height">
+                     <div class="card-header d-flex justify-content-between">
+                        <div class="header-title">
+                           <h4 class="card-title">
+                              built for Super Traders
+                           </h4>
+                        </div>
+                     </div>
+                     <div class="card-body">
+                        <div class="user-post-data" id="msg_append">
+                           <div class="container-fluid">
+                              <div class="px-4 row">
+                                 <ol style="font-size: large !important;font-weight: 500;">
+                                    <li>Tredcode integration with Dhan account.</li>
+                                    <li>One-click chart opening and trade Index options directly from Tredcode.</li>
+                                    <li>Unlimited alerts placing facilities for pin point entries on tredcode intraday boost stocks.</li>
+                                    <li>Free strategy builder for options and ready-made strategies to execute directly with one click.</li>
+                                 </ol>
                               </div>
                            </div>
                         </div>
@@ -793,6 +808,7 @@
 
    <footer></footer>
 
+
    <!-- Backend Bundle JavaScript -->
    <script src="js/libs.min.js"></script>
    <!-- Lodash Utility -->
@@ -827,6 +843,8 @@
    <script src="js/lottie.js"></script>
    <!--select2 Script -->
    <script src="js/select2.js"></script>
+   <!--font-awesome script-->
+   <script src="vendor/@fortawesome/fontawesome-free/js/all.min.js"></script>
    <!--common JS-->
    <script src="js/common.js"></script>
 
