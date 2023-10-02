@@ -222,16 +222,18 @@
                <li class="nav-item dropdown d-none d-lg-block">
                   <a href="javascript:void(0);" class="d-flex align-items-center dropdown-toggle" id="drop-down-arrow"
                      data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     <img src="images/user/1.jpg" class="img-fluid rounded-circle me-3" alt="user" loading="lazy">
+                     <img src="images/user/1.jpg" class="img-fluid rounded-circle me-3" alt="user" loading="lazy"
+                        id="avatar_image">
                      <div class="caption">
-                        <h6 class="mb-0 line-height">Samudra Gupta</h6>
+                        <h6 class="mb-0 line-height" id="acc_name"></h6>
                      </div>
                   </a>
                   <div class="sub-drop dropdown-menu caption-menu" aria-labelledby="drop-down-arrow">
                      <div class="card shadow-none m-0">
                         <div class="card-header ">
                            <div class="header-title">
-                              <h5 class="mb-0 ">Hello Samudra Gupta</h5>
+                              <h5 class="mb-0 " id="acc_name2"></h5>
+                              <a href="#" id="acc_type"></a>
                            </div>
                         </div>
                         <div class="card-body p-0 ">
@@ -261,7 +263,7 @@
                   </div>
                </li>
             </ul>
-            <div class=" border-top top-header-responsive d-lg-none">
+            <div class=" border-top  top-header-responsive d-lg-none">
                <ul class="list-unstyled p-0 m-0 menu-list">
                   <li class="icon-class" id="mode_nav_mobile">
                      <a href="javascript:void(0);" class="active">
@@ -304,7 +306,7 @@
                   </a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="community.html">
+                  <a class="nav-link " aria-current="page" href="community.html">
                      <i class="icon material-symbols-outlined">
                         communities
                      </i>
@@ -328,7 +330,7 @@
                   </a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="support.html">
+                  <a class="nav-link" aria-current="page" href="support.html">
                      <i class="icon material-symbols-outlined">
                         support_agent
                      </i>
@@ -343,7 +345,7 @@
                      <span class="item-name">Upgrade</span>
                   </a>
                </li>
-               <li class="nav-item">
+               <li class="nav-item jobs_pg">
                   <a class="nav-link " aria-current="page" href="jobs.html">
                      <i class="icon material-symbols-outlined">
                         work
@@ -351,7 +353,7 @@
                      <span class="item-name">Jobs</span>
                   </a>
                </li>
-               <li class="nav-item">
+               <li class="nav-item nism_pg">
                   <a class="nav-link " aria-current="page" href="nism.html">
                      <i class="icon material-symbols-outlined">
                         mountain_flag
@@ -360,7 +362,7 @@
                   </a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="classes.html">
+                  <a class="nav-link " aria-current="page" href="classes.html">
                      <i class="icon material-symbols-outlined">
                         school
                      </i>
@@ -368,7 +370,7 @@
                   </a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="feedback.html">
+                  <a class="nav-link " aria-current="page" href="feedback.html">
                      <i class="icon material-symbols-outlined">
                         feedback
                      </i>
@@ -417,8 +419,10 @@
                                  <ol style="font-size: large !important;font-weight: 500;">
                                     <li>Tredcode integration with Dhan account.</li>
                                     <li>One-click chart opening and trade Index options directly from Tredcode.</li>
-                                    <li>Unlimited alerts placing facilities for pin point entries on tredcode intraday boost stocks.</li>
-                                    <li>Free strategy builder for options and ready-made strategies to execute directly with one click.</li>
+                                    <li>Unlimited alerts placing facilities for pin point entries on tredcode intraday
+                                       boost stocks.</li>
+                                    <li>Free strategy builder for options and ready-made strategies to execute directly
+                                       with one click.</li>
                                  </ol>
                               </div>
                            </div>
@@ -430,10 +434,10 @@
             <div class="mt-5 row">
                <div class="col-md-5 hide">
                   <div class="videobg">
-                      <video id="videobg" src="images/Pc-New-11.m4v" autoplay="" loading="lazy" muted="" playsinline=""
-                          class="w-100 w3-display-center"></video>
+                     <video id="videobg" src="images/Pc-New-11.m4v" autoplay="" loading="lazy" muted="" playsinline=""
+                        class="w-100 w3-display-center"></video>
                   </div>
-              </div>
+               </div>
                <div class="col-md-7">
                   <div class="card card-block card-stretch card-height">
                      <div class="card-header d-flex justify-content-between">
@@ -447,93 +451,95 @@
                         <div class="user-post-data" id="msg_append">
                            <div class="container-fluid">
                               <div class="px-4 row">
-                                 <h5 class="mb-3">Advanced tools and features to help you trade online in all key segments - Stocks, Futures & Options, Commodities & Currencies</h5>
+                                 <h5 class="mb-3">Advanced tools and features to help you trade online in all key
+                                    segments - Stocks, Futures & Options, Commodities & Currencies</h5>
                                  <div class="row pl-0">
                                     <div class="col-md-1 col-2 pl-0">
-                                        <img src="images/traling-stop-loss.svg" class="Trailing Stop loss"
-                                            alt="1-Tap Reverse Position">
+                                       <img src="images/traling-stop-loss.svg" class="Trailing Stop loss"
+                                          alt="1-Tap Reverse Position">
                                     </div>
                                     <div class="col-md-5 col-10 pl-0 logo-text">
-                                        <h4 class="headsty">Trailing Stop loss</h4>
-                                        <p class="headsty1 pt-2">
-                                            Plan and manage risk better by trailing your stop-loss
-                                        </p>
+                                       <h4 class="headsty">Trailing Stop loss</h4>
+                                       <p class="headsty1 pt-2">
+                                          Plan and manage risk better by trailing your stop-loss
+                                       </p>
                                     </div>
                                     <div class="col-md-1 col-2 pl-0 space">
-                                        <img src="images/iceberg-order.svg" class="logo-home" alt="Iceberg Orders">
+                                       <img src="images/iceberg-order.svg" class="logo-home" alt="Iceberg Orders">
                                     </div>
                                     <div class="col-md-5 col-10 pl-0 space logo-text">
-                                        <h4 class="headsty">Iceberg Orders</h4>
-                                        <p class="headsty1 pt-2">
-                                            Execute large orders by dividing them into slices in Stocks or
-                                            F&amp;O
-                                        </p>
+                                       <h4 class="headsty">Iceberg Orders</h4>
+                                       <p class="headsty1 pt-2">
+                                          Execute large orders by dividing them into slices in Stocks or
+                                          F&amp;O
+                                       </p>
                                     </div>
-                                </div>
-                                <div class="row pl-0 space1 space-mob">
+                                 </div>
+                                 <div class="row pl-0 space1 space-mob">
                                     <div class="col-md-1 col-2 pl-0">
-                                        <img src="images/trader-1.svg" class="logo-home" alt="Basket Orders">
+                                       <img src="images/trader-1.svg" class="logo-home" alt="Basket Orders">
                                     </div>
                                     <div class="col-md-5 col-10 pl-0 logo-text">
-                                        <h4 class="headsty">Basket Orders</h4>
-                                        <p class="headsty1 pt-2">
-                                            Create online trading strategies for same or different stocks
-                                            &amp; execute in a single go
-                                        </p>
+                                       <h4 class="headsty">Basket Orders</h4>
+                                       <p class="headsty1 pt-2">
+                                          Create online trading strategies for same or different stocks
+                                          &amp; execute in a single go
+                                       </p>
                                     </div>
                                     <div class="col-md-1 col-2 pl-0 space">
-                                        <img src="images/trader-2.svg" class="logo-home" alt="Trade from Option Chain">
+                                       <img src="images/trader-2.svg" class="logo-home" alt="Trade from Option Chain">
                                     </div>
                                     <div class="col-md-5 col-10 pl-0 space logo-text">
-                                        <h4 class="headsty">Trade from Option Chain</h4>
-                                        <p class="headsty1 pt-2">
-                                            Trade seamlessly with direct buying / selling from Option
-                                            Chain
-                                        </p>
+                                       <h4 class="headsty">Trade from Option Chain</h4>
+                                       <p class="headsty1 pt-2">
+                                          Trade seamlessly with direct buying / selling from Option
+                                          Chain
+                                       </p>
                                     </div>
-                                </div>
-                                <div class="row space1 space-mob pl-0">
+                                 </div>
+                                 <div class="row space1 space-mob pl-0">
                                     <div class="col-md-1 col-2 pl-0">
-                                        <img src="images/trader-3.svg" class="logo-home" alt="Deep OTM / ITM">
+                                       <img src="images/trader-3.svg" class="logo-home" alt="Deep OTM / ITM">
                                     </div>
                                     <div class="col-md-5 col-10 pl-0 logo-text">
-                                        <h4 class="headsty">Deep OTM / ITM</h4>
-                                        <p class="headsty1 pt-2">
-                                            Trade in deep ITM &amp; OTM contracts with Advanced Option Chain &amp;
-                                            Greeks
-                                        </p>
+                                       <h4 class="headsty">Deep OTM / ITM</h4>
+                                       <p class="headsty1 pt-2">
+                                          Trade in deep ITM &amp; OTM contracts with Advanced Option Chain &amp;
+                                          Greeks
+                                       </p>
                                     </div>
                                     <div class="col-md-1 col-2 pl-0 space">
-                                        <img src="images/trader-4.svg" class="logo-home" alt="Pledging of Shares">
+                                       <img src="images/trader-4.svg" class="logo-home" alt="Pledging of Shares">
                                     </div>
                                     <div class="col-md-5 col-10 pl-0 space logo-text">
-                                        <h4 class="headsty">Pledging of Shares</h4>
-                                        <p class="headsty1 pt-2">
-                                            Get instant margin benefits by pledging shares
-                                        </p>
+                                       <h4 class="headsty">Pledging of Shares</h4>
+                                       <p class="headsty1 pt-2">
+                                          Get instant margin benefits by pledging shares
+                                       </p>
                                     </div>
-                                </div>
-                                <div class="row space1 space-mob pl-0">
+                                 </div>
+                                 <div class="row space1 space-mob pl-0">
                                     <div class="col-md-1 col-2 pl-0">
-                                        <img src="images/trader-5.svg" class="logo-home" alt="1-Tap Reverse Position">
+                                       <img src="images/trader-5.svg" class="logo-home" alt="1-Tap Reverse Position">
                                     </div>
                                     <div class="col-md-5 col-10 pl-0 logo-text">
-                                        <h4 class="headsty">1-Tap Reverse Position</h4>
-                                        <p class="headsty1 pt-2">
-                                            Reverse position in 1-tap and save brokerage
-                                        </p>
+                                       <h4 class="headsty">1-Tap Reverse Position</h4>
+                                       <p class="headsty1 pt-2">
+                                          Reverse position in 1-tap and save brokerage
+                                       </p>
                                     </div>
                                     <div class="col-md-1 col-2 pl-0 space">
-                                        <img src="images/trader-6.svg" class="logo-home" alt="Trade Directly from Charts">
+                                       <img src="images/trader-6.svg" class="logo-home"
+                                          alt="Trade Directly from Charts">
                                     </div>
                                     <div class="col-md-5 col-10 pl-0 space logo-text">
-                                        <h4 class="headsty">Trade Directly from Charts</h4>
-                                        <p class="headsty1 pt-2">
-                                            Trade futures, options, stocks, &amp; more directly on charts with
-                                            TradingView
-                                        </p>
+                                       <h4 class="headsty">Trade Directly from Charts</h4>
+                                       <p class="headsty1 pt-2">
+                                          Trade futures, options, stocks, &amp; more directly on charts with
+                                          TradingView
+                                       </p>
                                     </div>
-                                </div>
+                                 </div>
                               </div>
                            </div>
                         </div>

@@ -217,16 +217,17 @@
                <li class="nav-item dropdown d-none d-lg-block">
                   <a href="javascript:void(0);" class="d-flex align-items-center dropdown-toggle" id="drop-down-arrow"
                      data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     <img src="images/user/1.jpg" class="img-fluid rounded-circle me-3" alt="user" loading="lazy">
+                     <img src="images/user/1.jpg" class="img-fluid rounded-circle me-3" alt="user" loading="lazy" id="avatar_image">
                      <div class="caption">
-                        <h6 class="mb-0 line-height">Samudra Gupta</h6>
+                        <h6 class="mb-0 line-height" id="acc_name"></h6>
                      </div>
                   </a>
                   <div class="sub-drop dropdown-menu caption-menu" aria-labelledby="drop-down-arrow">
                      <div class="card shadow-none m-0">
                         <div class="card-header ">
                            <div class="header-title">
-                              <h5 class="mb-0 ">Hello Samudra Gupta</h5>
+                              <h5 class="mb-0 " id="acc_name2"></h5>
+                              <a href="#" id="acc_type"></a>
                            </div>
                         </div>
                         <div class="card-body p-0 ">
@@ -337,7 +338,7 @@
                      <span class="item-name">Upgrade</span>
                   </a>
                </li>
-               <li class="nav-item">
+               <li class="nav-item jobs_pg">
                   <a class="nav-link " aria-current="page" href="jobs.html">
                      <i class="icon material-symbols-outlined">
                         work
@@ -345,7 +346,7 @@
                      <span class="item-name">Jobs</span>
                   </a>
                </li>
-               <li class="nav-item">
+               <li class="nav-item nism_pg">
                   <a class="nav-link " aria-current="page" href="nism.html">
                      <i class="icon material-symbols-outlined">
                         mountain_flag
@@ -409,29 +410,23 @@
                            <div class="row">
                               <div class="col-lg-6">
                                  <div class="ratio ratio-16x9" id="frame1">
-                                    <iframe class="embed-responsive-item"
-                                       src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-                                       allowfullscreen=""></iframe>
+                                    
                                  </div>
                                  <hr>
                                  <div class="d-flex justify-content-center">
                                     <div class="mt-2 mb-3 text-center" id="frame1_desc" style="font-size: 14px;">
-                                       <b>English</b><br>Tredcode, options access,
-                                       session missed.. all important instruction
+                                       
                                     </div>
                                  </div>
                               </div>
                               <div class="col-lg-6">
                                  <div class="ratio ratio-16x9" id="frame2">
-                                    <iframe class="embed-responsive-item"
-                                       src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
-                                       allowfullscreen=""></iframe>
+                                    
                                  </div>
                                  <hr>
                                  <div class="d-flex justify-content-center">
                                     <div class="mt-2 mb-3 text-center" id="frame2_desc" style="font-size: 14px;">
-                                       <b>Hindi</b><br>Tredcode, options access,
-                                       session missed.. all important instruction
+                                       
                                     </div>
                                  </div>
                               </div>
@@ -453,7 +448,7 @@
                            </div>
                         </div>
                         <div class="card-body">
-                           <div class="user-post-data" id="msg_append">
+                           <div class="user-post-data">
                               <div class="d-flex justify-content-between">
                                  <div class="me-3">
                                     <img src="images/tci_logo.webp" width="50px" alt="" loading="lazy">
@@ -469,41 +464,15 @@
                                  </div>
                               </div>
                               <hr>
+                              <div id="msg_append" style="overflow-y: auto; max-height: 90vh">
+                              
+                              
                               <div class="text-center" id="locked_msg" style="display:none;">
                                  <span class="font-weight-bold">Message Center is Currently Locked!</span><br>
                                  <span>Please watch all video sessions in Classes section, only after message center
                                     will be unlocked for Live and Interactive Video Sessions.</span>
                               </div>
-                              <div class="iq-message-body iq-other-user mb-3">
-                                 <div class="chat-profile">
-                                    <img src="images/tci_logo.webp" width="20px" alt="chat-user" class="rounded"
-                                       loading="lazy">
-                                    <small class="iq-chating p-0 mb-0 d-block">16:40</small>
-                                 </div>
-                                 <div class="iq-chat-text">
-                                    <div class="d-flex align-items-center justify-content-start">
-                                       <div class="iq-chating-content d-flex align-items-center ">
-                                          <p class="mr-2 mb-0">Hey John, I am looking for the best admin template.
-                                             Could you please help me to find it out? 🤔</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="iq-message-body iq-other-user mb-2">
-                                 <div class="chat-profile">
-                                    <img src="images/tci_logo.webp" width="20px" alt="chat-user" class="rounded"
-                                       loading="lazy">
-                                    <small class="iq-chating p-0 mb-0 d-block">16:40</small>
-                                 </div>
-                                 <div class="iq-chat-text">
-                                    <div class="d-flex align-items-center justify-content-start">
-                                       <div class="iq-chating-content d-flex align-items-center ">
-                                          <p class="mr-2 mb-0">Hey John, I am looking for the best admin template.
-                                             Could you please help me to find it out? 🤔</p>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
+                           </div>
                            </div>
                         </div>
                      </div>
@@ -518,47 +487,7 @@
                      </div>
                      <div class="card-body">
                         <ul class="media-story list-inline m-0 p-0" id="link_append">
-                           <li class="d-flex mb-3 align-items-center">
-                              <div class="stories-data ms-3">
-                                 <h5><a
-                                       href="https://docs.google.com/document/d/1SyvqVKjZ1itbqlJq2cwbTb2FG-xotXs_CiMw1jgPlrE/edit?usp=sharing">Instructions</a>
-                                 </h5>
-                              </div>
-                           </li>
-                           <li class="d-flex mb-3 align-items-center">
-                              <div class="stories-data ms-3">
-                                 <h5><a
-                                       href="https://docs.google.com/document/d/1ayFC8sBWIgm6hEzT7SzdzTx-wDvZy2ZwQJJFlzBouIo/edit?usp=sharing">Time
-                                       table</a></h5>
-                              </div>
-                           </li>
-                           <li class="d-flex mb-3 align-items-center">
-                              <div class="stories-data ms-3">
-                                 <h5><a
-                                       href="https://docs.google.com/document/d/1WPoOpPtwFQl5gLKeVw80HjJr8KT_YCZrrJnGg8qjKAk/edit?usp=sharing">Why
-                                       most traders fail ?</a></h5>
-                              </div>
-                           </li>
-                           <li class="d-flex mb-3 align-items-center">
-                              <div class="stories-data ms-3">
-                                 <h5><a
-                                       href="https://docs.google.com/document/d/1YdMoz6wwiF28a0amF6COhRJM0Q0dnUXndmbmbIOdEHU/edit?usp=sharing">Options
-                                       Resources</a></h5>
-                              </div>
-                           </li>
-                           <li class="d-flex mb-3 align-items-center">
-                              <div class="stories-data ms-3">
-                                 <h5><a
-                                       href="https://docs.google.com/document/d/1KZMO8sk_1g9c-05kmf6xrkltURpgbc9B_4Qe8DjGq4M/edit?usp=sharing">Resources</a>
-                                 </h5>
-                              </div>
-                           </li>
-                           <li class="d-flex align-items-center">
-                              <div class="stories-data ms-3">
-                                 <h5><a href="https://www.tradingcafeindia.in/tcidhann">Get free Tools for Trading</a>
-                                 </h5>
-                              </div>
-                           </li>
+                           
                         </ul>
                      </div>
                   </div>
@@ -978,8 +907,11 @@
    <script src="js/lottie.js"></script>
    <!--select2 Script -->
    <script src="js/select2.js"></script>
+   <!-- moment JS-->
+   <script src="vendor/moment.min.js"></script>
    <!--common JS-->
    <script src="js/common.js"></script>
+   <script src="js/message_center.js"></script>
 
 </body>
 

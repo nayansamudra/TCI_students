@@ -1,0 +1,2 @@
+community.js (inside get_all_posts() function)
+<img src="${data[i][5]}" class="img-fluid rounded w-100" alt="blog-img" onerror="if (this.src != '/images/tci_logo.png') this.src = '/images/tci_logo.png'">

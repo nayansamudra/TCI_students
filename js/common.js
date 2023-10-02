@@ -1,3 +1,52 @@
+api_url = "https://students.tradingcafeindia.com"
+
+/*------------------------------------
+    common function of all the pages
+--------------------------------------*/
+
+const redirect = (link, redirect = false) => {
+    if (redirect) { window.open(link, '_blank') }
+    else { window.location.href = link }
+}
+
+const detect_acc_type = () => {
+    $.post(api_url + "/detect_user", { email: email }, function (data, status) {
+        if (data == "foundation") {
+            global_course = data
+            $(".jobs_pg,.nism_pg").hide()
+            $("#acc_type").html("Foundation Course")
+        }
+        else if (data == "pro partial") {
+            global_course = data
+            $(".jobs_pg,.nism_pg").hide()
+            $("#acc_type").html("Pro Mentorship")
+        }
+        else if (data == "pro full") {
+            global_course = data
+            $("#acc_type").html("Pro Mentorship")
+        }
+        else { $(".jobs_pg").hide() }
+    })
+}
+
+const get_avatar = () => {
+    $.post(api_url + "/get_avatar", { email: email }, function (data, status) {
+        data = data[0]
+        $("#avatar_image").attr("src", data[0])
+
+        if (data[1] == "0" || data[1] == "") {
+            data[1] = "Student"
+        }
+        $("#acc_name").text(data[1])
+        $("#acc_name2").text("Hello " + data[1])
+    })
+}
+
+const tci_logout = () => {
+    window.location.href = "signin.html"
+}
+
+
 /*----------------------------
     dark-light-theme 
 ----------------------------*/
@@ -178,6 +227,19 @@ $(document).on('click', '.sidebar-toggle', function (e) {
 ----------------------------*/
 
 $(document).ready(function () {
+
+    email = "dknaix@gmail.com"
+    detect_acc_type()
+    get_avatar()
+
+    //------- verfify user
+    $.post(api_url + "/verify_user", { email: email }, function (data, status) {
+        console.log("Data: " + data + "\nStatus: " + status);
+        if (data == "success") { }
+        else {
+            tci_logout()
+        }
+    });
 
     // ------- For Creating
     create_toast()

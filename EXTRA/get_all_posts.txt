@@ -1,0 +1,155 @@
+[
+  [
+    "1696079562.3457024", 
+    "hard tha par fir bhi positive close mila", 
+    "thank you tci team and mentors and traders...bohot kuchh sikhne mil raha hai community ka part hu toh aur sessions me mentors bhi bohot guide and support karte hai...abhi toh job pe work load hai toh thoda difficult ja raha hai...par next month thoda work kam rahega toh next month achhe se focus kar paunga...", 
+    "mosherlonery7856@gmail.com", 
+    "pnl", 
+    "/img/Q3E05VA1YRSAS3G5.png", 
+    "277", 
+    "Y"
+  ], 
+  [
+    "1696078547.6240244", 
+    "In love with the process", 
+    "After learning from TCI, I have started seeing trading in totally different way. Im amazed after seeing the result of consistency. Im grateful for everything chinmay sir\ud83d\ude4c", 
+    "chirag.chudasama97@gmail.com", 
+    "pnl", 
+    "/img/9P9G2MM10Q9W55ZP.jpg", 
+    "292", 
+    "Y"
+  ], 
+  [
+    "1696075382.4703183", 
+    "2nd month with Tci ", 
+    "Best month till & 2nd month with tci going amazing \ud83d\udc4f \ud83d\ude4c ", 
+    "jatmk70@gmail.com", 
+    "pnl", 
+    "/img/3ABVCFC16GHOY8TI.jpg", 
+    "153", 
+    "Y"
+  ], 
+  [
+    "1696075053.0894303", 
+    "Hindalco 29 sep ", 
+    "Where do u think was the right  entry for this kind of setup entry at retest or entry on crossing morning high. ", 
+    "singhrohan75424@gmail.com", 
+    "chart-analysis", 
+    "/img/1L9KPEJK7IJF3LA7.png", 
+    "164", 
+    "Y"
+  ], 
+  [
+    "1696072598.0979514", 
+    "All in all a good month", 
+    "This long weekend is for reviewing all trades and working on weak points so that we can blast in OCT...I made silly mistakes this month and I will work on them so that I will not repeat all these mistakes. Happy weekend everyone, Happy trading and enjoy the freedom.", 
+    "fagidorlucus7755@gmail.com", 
+    "pnl", 
+    "/img/DRMYFREIQKYU4BQG.png", 
+    "381", 
+    "Y"
+  ], 
+  [
+    "1696072065.433083", 
+    "September month trades", 
+    "I think all that matters is consistent trying your setup and rules.  As I dont get enough time to trade I always jumped into wrong trade and paid the price but  this month I just focused on trades which were in my setup. Thanks tci ", 
+    "mukesh.rajuram97@gmail.com", 
+    "tradegoals", 
+    "/img/UD1OSGL5GDJ77B90.jpg", 
+    "206", 
+    "Y"
+  ], 
+  [
+    "1696068834.9290457", 
+    "After TCI", 
+    "TCI POWER\r\n", 
+    "dinagore3@gmail.com", 
+    "pnl", 
+    "/img/RPPFX0MUX666SHJ3.jpg", 
+    "176", 
+    "Y"
+  ], 
+  [
+    "1696068169.1502128", 
+    "MTD Sept Result", 
+    "Improving Day by day. All credit goes to Tredcode and all mentors. \r\nThank you. \r\nKeep trading friends and never give up. \r\nYou will get your trading edge. ", 
+    "prasadghodake121@gmail.com", 
+    "pnl", 
+    "/img/143JRI0CM8K978DI.jpg", 
+    "215", 
+    "Y"
+  ], 
+  [
+    "1696067897.5336504", 
+    "kya lagta hai aapko!!!!", 
+    "Dr Lal Pathlab CUP-HANDLE Patter D TF", 
+    "ratanparadivyesh@gmail.com", 
+    "chart-analysis", 
+    "/img/FRH5R379R7B9887F.jpg", 
+    "215", 
+    "Y"
+  ], 
+  [
+    "1696065569.109077", 
+    "PNL", 
+    "Its not about the money Ive earned..its all about the learning which make me stand still...Before joining TCI Ive eroded my capital twice....but this this time Ive saved my capital for my upcoming learning and this is only bcoz of my entire GURUS Jai sir, Prashant sir, Kulneet sir and last but not least Chinmay sir.....I thank the entire TCI team for this....Hope to learn big and achieve big along with TCI in upcoming year\ud83d\ude0a", 
+    "sarfunnishaenglit@gmail.com", 
+    "pnl", 
+    "/img/TEXGEFB1MSYHRMHV.jpg", 
+    "278", 
+    "Y"
+  ], 
+  [
+    "1696065299.3149607", 
+    "closed in green ", 
+    "2nd month closed in green , need to work on setup for more accourcy . thank you tci for teaching the right way from start .", 
+    "vigneshdhangar@gmail.com", 
+    "pnl", 
+    "/img/NK8KV04IK8CXF24Z.png", 
+    "191", 
+    "Y"
+  ], 
+  [
+    "1696060692.2909453", 
+    "Pocket full of profits and a heart full of wanderlust", 
+    "My little brother called me lucky because I got my favorite car 3 weeks before my birthday and also got this long weekend to enjoy time with nature. But I know the reality, in life, I might get lucky, but in trading, I believe in hard work with the right methods and the right trading tools (TREDCODE). September was good for me compared to August, so I decided to spend this free time in nature.", 
+    "larkerlorry8866@gmail.com", 
+    "tradegoals", 
+    "/img/X75ALFZIET6DYWSN.jpeg", 
+    "224", 
+    "Y"
+  ], 
+  [
+    "1696060008.4593847", 
+    "Happy Weekend TCIans", 
+    "Maza aya yeh month thoda aur mehnat karna hai stock selection pe baki meri index trading mast gayi waha pe bhi almost 20k ass pass earning ki hai...at the end I close this month with good returns. Thank you tci and tredcode.", 
+    "jenisakinery8865@gmail.com", 
+    "pnl", 
+    "/img/SSZ32L64SD50WTOB.png", 
+    "378", 
+    "Y"
+  ], 
+  [
+    "1696059932.6211193", 
+    "Bank Nifty Option Selling strategy", 
+    " Smooth Equity Curve \r\nBacktesting Period - Apr 1st 2019 Sep 20th 2023", 
+    "infovishalchauhan@gmail.com", 
+    "intraday-trading-signals", 
+    "/img/43TEXVTFHKKKRATD.png", 
+    "284", 
+    "Y"
+  ], 
+  [
+    "1696058548.28446", 
+    "Follow the plan", 
+    "3 out of 5\r\nTCI\u2764", 
+    "samrko10@gmail.com", 
+    "pnl", 
+    "/img/BM0IDJNEHOIIT2JR.jpg", 
+    "212", 
+    "Y"
+  ], 
+  [
+    "[\"1649772090.0793886\", \"1695372943.7734697\", \"1695383509.8536496\", \"1695390297.4411802\", \"1695437343.7642522\", \"1695665953.5606434\", \"1695656147.1085865\", \"1695711345.2070827\", \"1695709099.5013316\", \"1695717921.1526265\", \"1696051671.7417881\", \"1696060692.2909453\", \"1696060008.4593847\", \"1696068834.9290457\", \"1696072598.0979514\"]"
+  ]
+]

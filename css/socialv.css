@@ -11300,7 +11300,8 @@ fieldset:disabled .btn {
   border-radius: 20px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  /* background: #f1f1f1; */
+  background: transparent;
   border-radius: 20px;
 }
 ::-webkit-scrollbar-thumb {
@@ -15670,7 +15671,7 @@ button.close-btn-res {
 .iq-current-user.iq-message-body,
 .iq-other-user.iq-message-body {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   visibility: visible;
 }
 .iq-current-user.iq-message-body .iq-chat-text,
@@ -15678,7 +15679,7 @@ button.close-btn-res {
   flex: 1;
 }
 .iq-chating-content {
-  max-width: 80%;
+  max-width: 100%;
   padding: 0.625rem 1rem;
   background-color: #232323;
   color: #fff;
@@ -23882,6 +23883,14 @@ button.bg-soft-dark:hover {
 ------------------------ Custom CSS -------------------------------------- 
 --------------------------------------------------------------------------*/
 
+.theme-color-default.light #acc_type2{
+  color: #0088ff !important;
+}
+
+#acc_type2{
+  font-size: 14px;
+}
+
 @media (max-width: 992px) {
   #content-page {
     margin-bottom: 50px !important;
@@ -24035,6 +24044,13 @@ h6 {
   .modal-dialog {
     max-width: 600px;
   }
+}
+
+.theme-color-default.light .community_post {
+  background: #e8e8e8;
+}
+.theme-color-default.dark .community_post {
+  background: #343434;
 }
 
 /*----------------------
