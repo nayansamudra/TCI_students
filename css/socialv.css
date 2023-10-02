@@ -23883,11 +23883,11 @@ button.bg-soft-dark:hover {
 ------------------------ Custom CSS -------------------------------------- 
 --------------------------------------------------------------------------*/
 
-.theme-color-default.light #acc_type2{
+.theme-color-default.light #acc_type2 {
   color: #0088ff !important;
 }
 
-#acc_type2{
+#acc_type2 {
   font-size: 14px;
 }
 
@@ -24037,7 +24037,9 @@ h6 {
 }
 
 .theme-color-default.dark #myModal .btn-close {
-  background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+  background: transparent
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e")
+    center/1em auto no-repeat;
 }
 
 @media (min-width: 576px) {
@@ -24053,23 +24055,37 @@ h6 {
   background: #343434;
 }
 
+.theme-color-default.light li .category_class.selected {
+  color: #0088ff;
+}
+.theme-color-default.dark li .category_class.selected {
+  color: #50b5ff;
+}
+
+.theme-color-default.light .view_options h6.selected {
+  color: #0088ff;
+}
+.theme-color-default.dark .view_options h6.selected  {
+  color: #50b5ff;
+}
+
 /*----------------------
  TCI-DHAN Collaboration 
 ----------------------*/
-@media (max-width:1210px) {
+@media (max-width: 1210px) {
   #Heading_col #Heading {
     font-size: xx-large !important;
   }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   #Heading_col #Heading {
     font-size: x-large !important;
   }
-  #banner_image div{
+  #banner_image div {
     font-size: large !important;
   }
-  #Tci_logo_collab_page{
+  #Tci_logo_collab_page {
     width: 60px !important;
   }
   #dhan_logo_collab_page {
@@ -24077,19 +24093,19 @@ h6 {
   }
 }
 
-@media (max-width:530px) {
+@media (max-width: 530px) {
   #tci_logo_col,
   #Heading_col,
-  #dhan_logo_col{
+  #dhan_logo_col {
     padding: 0 !important;
-}
+  }
   #Heading_col #Heading {
     font-size: large !important;
   }
-  #banner_image div{
+  #banner_image div {
     font-size: 16px !important;
   }
-  #Tci_logo_collab_page{
+  #Tci_logo_collab_page {
     width: 40px !important;
   }
   #dhan_logo_collab_page {
@@ -24097,15 +24113,15 @@ h6 {
   }
 }
 
-@media (max-width:390px) {
+@media (max-width: 390px) {
   #Heading_col #Heading {
     font-size: 18px !important;
   }
   #Heading_col,
-  #dhan_logo_col{
+  #dhan_logo_col {
     padding-right: 5px !important;
-}
-  #Tci_logo_collab_page{
+  }
+  #Tci_logo_collab_page {
     width: 50px !important;
   }
   #dhan_logo_collab_page {
@@ -24117,26 +24133,26 @@ h6 {
  My Post Page 
  ------------*/
 .delete_dropdown .dropdown-menu.show {
-  inset: 0px 0px auto auto !important; 
+  inset: 0px 0px auto auto !important;
 }
 
 /*------------
  Support Page 
  ------------*/
 .theme-color-default.dark .wp-block-group__inner-container h2 span {
-  color: #50b5ff !important
+  color: #50b5ff !important;
 }
-.support_page{
+.support_page {
   margin: 5px 0 10px 0 !important;
 }
-@media (min-width:576px) and (max-width:768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   .ticket_spacing {
     margin-right: 0.25rem !important;
   }
 }
 
 .theme-color-default.light #myModal table {
-  color: #000 !important
+  color: #000 !important;
 }
 
 .theme-color-default.dark .ms-1.px-2.rounded.float-end.question_value,
@@ -24159,13 +24175,14 @@ h6 {
  Job Page 
 ---------*/
 .theme-color-default.dark .wp-block-group__inner-container h2 span {
-  color: #50b5ff !important
+  color: #50b5ff !important;
 }
-.job_page{
+.job_page {
   margin: 5px 0 10px 0 !important;
 }
-@media (max-width:576px) {
-  ol, ul {
+@media (max-width: 576px) {
+  ol,
+  ul {
     padding-left: 1.3rem;
   }
 }
@@ -24183,12 +24200,13 @@ h6 {
   color: #fff;
 }
 
-@media (max-width:475px) {
+@media (max-width: 475px) {
   .d-md-flex .d-md-flex .d-inline-flex {
     margin-right: 0px !important;
   }
 
-  #qp_list1_append, #qp_list1_append1 {
+  #qp_list1_append,
+  #qp_list1_append1 {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -24234,7 +24252,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 

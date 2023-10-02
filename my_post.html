@@ -401,7 +401,23 @@
          <div class="container main_div_container">
             <div class="row">
                <div class="col-lg-3">
-                  <div id="block-2" class="widget widget_block">
+                  <div id="block-3" class="widget widget_block" style="padding:1.7em">
+                     <div class="px-0 container-fluid">
+                        <div class="px-0 row view_options">
+                           <div class="px-0 col-6" id="Grid_View" style="cursor: pointer;">
+                              <h6 class="d-flex align-items-center view_option selected"><span
+                                    class="material-symbols-outlined me-2">grid_view</span>
+                                 Grid View</h6>
+                           </div>
+                           <div class="px-0 col-6" id="Detail_View" style="cursor: pointer;">
+                              <h6 class="d-flex align-items-center view_option"><span
+                                    class="material-symbols-outlined me-2">view_headline</span>
+                                 Detail View</h6>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="block-2" class="widget widget_block" style="cursor: pointer;">
                      <h6 class="d-flex align-items-center"><span class="material-symbols-outlined me-2">add</span>
                         Create New Post</h6>
                   </div>
@@ -410,31 +426,21 @@
                         <div class="wp-block-group__inner-container">
                            <h2>Categories</h2>
                            <ul class="wp-block-categories-list wp-block-categories">
-                              <li class="cat-item cat-item-53"><a
-                                    href="https://wordpress.iqonic.design/product/wp/socialv/category/art-work/">All</a>
+                              <li class="cat-item cat-item-53"><a href="#" class="category_class selected"
+                                    data-val="all">All</a>
                               </li>
-                              <li class="cat-item cat-item-55"><a
-                                    href="https://wordpress.iqonic.design/product/wp/socialv/category/customer/">Pnl</a>
+                              <li class="cat-item cat-item-55"><a href="#" class="category_class" data-val="pnl">Pnl</a>
                               </li>
-                              <li class="cat-item cat-item-57"><a
-                                    href="https://wordpress.iqonic.design/product/wp/socialv/category/digital/">Trading/Investing
-                                    Setup</a>
-                              </li>
-                              <li class="cat-item cat-item-54"><a
-                                    href="https://wordpress.iqonic.design/product/wp/socialv/category/social-media/">Trading
-                                    Goals</a>
-                              </li>
-                              <li class="cat-item cat-item-58"><a
-                                    href="https://wordpress.iqonic.design/product/wp/socialv/category/technology/">Memes</a>
-                              </li>
-                              <li class="cat-item cat-item-56"><a
-                                    href="https://wordpress.iqonic.design/product/wp/socialv/category/virtual/">Chart
-                                    Analysis</a>
-                              </li>
-                              <li class="cat-item cat-item-56"><a
-                                    href="https://wordpress.iqonic.design/product/wp/socialv/category/virtual/">Intraday
-                                    trading signals</a>
-                              </li>
+                              <li class="cat-item cat-item-57"><a href="#" class="category_class"
+                                    data-val="trade/invesing-setup">Trading/Investing Setup</a></li>
+                              <li class="cat-item cat-item-54"><a href="#" class="category_class"
+                                    data-val="tradegoals">Trading Goals</a></li>
+                              <li class="cat-item cat-item-58"><a href="#" class="category_class"
+                                    data-val="memes">Memes</a></li>
+                              <li class="cat-item cat-item-56"><a href="#" class="category_class"
+                                    data-val="chart-analysis">Chart Analysis</a></li>
+                              <li class="cat-item cat-item-56"><a href="#" class="category_class"
+                                    data-val="intraday-trading-signals">Intraday trading signals</a></li>
                            </ul>
                         </div>
                      </div>
@@ -529,155 +535,11 @@
                </div>
                <div class="col-lg-9">
                   <div class="container-fluid" id="post_content">
-                     <div class="row" id="append_here">
-                        <div class="col-lg-6">
-                           <div class="card card-transparent card-block card-stretch card-height blog-grid blog-single">
-                              <div class="card-body p-0 position-relative">
-                                 <div class="image-block">
-                                    <img src="images/blog/03.jpg" class="img-fluid rounded w-100" alt="blog-img">
-                                 </div>
-                                 <div class="blog-description p-3">
-                                    <div class="date"><a href="#" tabindex="-1">3 Month ago</a></div>
-                                    <h5 class="mb-2">Containing coronavirus spread comes</h5>
-                                    <div
-                                       class="d-flex align-items-center justify-content-between position-right-side blog_like">
-                                       <div class="like d-flex align-items-center">
-                                          <i class="material-symbols-outlined pe-2 md-18 thumb_up">thumb_up</i><span
-                                             class="number_of_like">20</span>&nbsp;like
-                                       </div>
-                                       <div class="card-post-toolbar delete_dropdown">
-                                          <div class="dropdown">
-                                             <span class="dropdown-toggle material-symbols-outlined"
-                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                                role="button">
-                                                more_horiz
-                                             </span>
-                                             <div class="dropdown-menu m-0 p-0">
-                                                <a class="dropdown-item p-3" href="#">
-                                                   <div class="delete d-flex align-items-center">
-                                                      <i class="material-symbols-outlined pe-2 md-18">delete</i>delete
-                                                   </div>
-                                                </a>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-6">
-                           <div class="card card-transparent card-block card-stretch card-height blog-grid blog-single">
-                              <div class="card-body p-0 position-relative">
-                                 <div class="image-block">
-                                    <img src="images/blog/04.jpg" class="img-fluid rounded w-100" alt="blog-img"
-                                       loading="lazy">
-                                 </div>
-                                 <div class="blog-description p-3">
-                                    <div class="date"><a href="#" tabindex="-1">3 Month ago</a></div>
-                                    <h5 class="mb-2">Containing coronavirus spread comes</h5>
-                                    <div
-                                       class="d-flex align-items-center justify-content-between position-right-side blog_like">
-                                       <div class="like d-flex align-items-center">
-                                          <i class="material-symbols-outlined pe-2 md-18 thumb_up">thumb_up</i><span
-                                             class="number_of_like">20</span>&nbsp;like
-                                       </div>
-                                       <div class="card-post-toolbar delete_dropdown">
-                                          <div class="dropdown">
-                                             <span class="dropdown-toggle material-symbols-outlined"
-                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                                role="button">
-                                                more_horiz
-                                             </span>
-                                             <div class="dropdown-menu m-0 p-0">
-                                                <a class="dropdown-item p-3" href="#">
-                                                   <div class="delete d-flex align-items-center">
-                                                      <i class="material-symbols-outlined pe-2 md-18">delete</i>delete
-                                                   </div>
-                                                </a>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-6">
-                           <div class="card card-transparent card-block card-stretch card-height blog-grid blog-single">
-                              <div class="card-body p-0 position-relative">
-                                 <div class="image-block">
-                                    <img src="images/blog/01.jpg" class="img-fluid rounded w-100" alt="blog-img">
-                                 </div>
-                                 <div class="blog-description p-3">
-                                    <div class="date"><a href="#" tabindex="-1">3 Month ago</a></div>
-                                    <h5 class="mb-2">Containing coronavirus spread comes</h5>
-                                    <div
-                                       class="d-flex align-items-center justify-content-between position-right-side blog_like">
-                                       <div class="like d-flex align-items-center">
-                                          <i class="material-symbols-outlined pe-2 md-18 thumb_up">thumb_up</i><span
-                                             class="number_of_like">20</span>&nbsp;like
-                                       </div>
-                                       <div class="card-post-toolbar delete_dropdown">
-                                          <div class="dropdown">
-                                             <span class="dropdown-toggle material-symbols-outlined"
-                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                                role="button">
-                                                more_horiz
-                                             </span>
-                                             <div class="dropdown-menu m-0 p-0">
-                                                <a class="dropdown-item p-3" href="#">
-                                                   <div class="delete d-flex align-items-center">
-                                                      <i class="material-symbols-outlined pe-2 md-18">delete</i>delete
-                                                   </div>
-                                                </a>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-6">
-                           <div class="card card-transparent card-block card-stretch card-height blog-grid blog-single">
-                              <div class="card-body p-0 position-relative">
-                                 <div class="image-block">
-                                    <img src="images/blog/03.jpg" class="img-fluid rounded w-100" alt="blog-img"
-                                       loading="lazy">
-                                 </div>
-                                 <div class="blog-description p-3">
-                                    <div class="date"><a href="#" tabindex="-1">3 Month ago</a></div>
-                                    <h5 class="mb-2">Containing coronavirus spread comes</h5>
-                                    <div
-                                       class="d-flex align-items-center justify-content-between position-right-side blog_like">
-                                       <div class="like d-flex align-items-center">
-                                          <i class="material-symbols-outlined pe-2 md-18 thumb_up">thumb_up</i><span
-                                             class="number_of_like">20</span>&nbsp;like
-                                       </div>
-                                       <div class="card-post-toolbar delete_dropdown">
-                                          <div class="dropdown">
-                                             <span class="dropdown-toggle material-symbols-outlined"
-                                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                                role="button">
-                                                more_horiz
-                                             </span>
-                                             <div class="dropdown-menu m-0 p-0">
-                                                <a class="dropdown-item p-3" href="#">
-                                                   <div class="delete d-flex align-items-center">
-                                                      <i class="material-symbols-outlined pe-2 md-18">delete</i>delete
-                                                   </div>
-                                                </a>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
+                     <div class="row" id="post_append">
+                        
                      </div>
                   </div>
+                  <!-- Create Post Form -->
                   <div class="container-fluid" id="create_post_form" style="display: none;">
                      <div class="row">
                         <div class="col-sm-12 col-lg-12">
@@ -694,14 +556,15 @@
                                           <div class="col-md-12">
                                              <div class="form-group">
                                                 <label class="form-label">Title of your Post: *</label>
-                                                <input type="text" class="form-control" name="Title" autocomplete="off">
+                                                <input type="text" class="form-control" name="Title" id="ip_title"
+                                                   autocomplete="off">
                                              </div>
                                           </div>
                                           <div class="col-md-6">
                                              <div class="form-group">
-                                                <label class="form-label" for="exampleFormControlSelect1">Select
+                                                <label class="form-label" for="ip_tag">Select
                                                    Tag *</label>
-                                                <select class="form-select" id="exampleFormControlSelect1">
+                                                <select class="form-select" id="ip_tag">
                                                    <option selected disabled>select tag</option>
                                                    <option value="pnl">Pnl</option>
                                                    <option value="trade/invesing-setup">Trading/Investing Setup
@@ -731,8 +594,7 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <button id="submit_btn" type="submit"
-                                       class="btn btn-primary float-end">Submit</button>
+                                    <button id="submit_btn" class="btn btn-primary float-end">Submit</button>
                                     <button id="close_btn" class="btn btn-secondary float-end me-2">Close</button>
                                  </form>
                               </div>
@@ -1092,7 +954,8 @@
       </span>
    </a> <!-- Live Customizer end -->
 
-   <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+      style="z-index: 2000;">
       <div class="modal-dialog modal-dialog-centered">
          <div class="modal-content">
             <div class="modal-header">
@@ -1107,31 +970,30 @@
                               <div class="user-post-data">
                                  <div class="d-flex justify-content-between">
                                     <div class="me-3">
-                                       <img class="rounded-circle img-fluid" src="images/user/03.jpg" alt=""
-                                          loading="lazy" />
+                                       <img class="rounded-circle img-fluid" src="images/user/03.jpg" width="50px" alt=""
+                                          loading="lazy" id="post_avatar" />
                                     </div>
                                     <div class="w-100">
                                        <div class="d-flex justify-content-between">
                                           <div class="">
-                                             <h5 class="mb-0 d-inline-block">Barb Ackue <img src="images/verified.png"
+                                             <h5 class="mb-0 d-inline-block" id="post_author">
+                                                <img src="images/verified.png"
                                                    width="20px"></h5>
-                                             <p class="mb-0 text-primary">1 hour ago</p>
+                                             <p class="mb-0 text-primary" id="post_time_push"></p>
                                           </div>
                                        </div>
                                     </div>
                                  </div>
                               </div>
                               <div class="mt-3">
-                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Morbi nulla dolor, ornare at commodo non, feugiat non
-                                    nisi. Phasellus faucibus mollis pharetra. Proin blandit
-                                    ac massa sed rhoncus
-                                 </p>
+                                 <h3 id="post_topic_push"></h3>
+                                 <h6 id="post_tag_push" class="mb-3"></h6>
+                                 <p id="post_msg_push"></p>
                               </div>
                               <div class="user-post">
-                                 <a href="javascript:void(0);"><img src="images/page-img/p4.jpg" alt="post-image"
-                                       class="img-fluid rounded w-100" loading="lazy" /></a>
+                                 <img src="images/10.jpg" id="post_img" alt="post-image"
+                                       class="img-fluid rounded w-100" loading="lazy"
+                                       style="max-height: 350px; object-fit: contain;" />
                               </div>
                               <div class="comment-area mt-3">
                                  <div class="d-flex align-items-center flex-wrap">
@@ -1139,43 +1001,14 @@
                                        <div class="d-flex align-items-center">
                                           <div class="like-data">
                                              <div class="dropdown">
-                                                <span class="dropdown-toggle" data-bs-toggle="dropdown"
-                                                   aria-haspopup="true" aria-expanded="false" role="button">
+                                                <span class="dropdown-toggle">
                                                    <img src="images/icon/01.png" class="img-fluid" alt="" />
                                                 </span>
-                                                <div class="dropdown-menu py-2">
-                                                   <a class="ms-2 me-2" href="#" data-bs-toggle="tooltip"
-                                                      data-bs-placement="top" title="Like"><img src="images/icon/01.png"
-                                                         class="img-fluid" alt="" loading="lazy" /></a>
-                                                   <a class="me-2" href="#" data-bs-toggle="tooltip"
-                                                      data-bs-placement="top" title="Love"><img src="images/icon/02.png"
-                                                         class="img-fluid" alt="" loading="lazy" /></a>
-                                                   <a class="me-2" href="#" data-bs-toggle="tooltip"
-                                                      data-bs-placement="top" title="Happy"><img
-                                                         src="images/icon/03.png" class="img-fluid" alt=""
-                                                         loading="lazy" /></a>
-                                                   <a class="me-2" href="#" data-bs-toggle="tooltip"
-                                                      data-bs-placement="top" title="HaHa"><img src="images/icon/04.png"
-                                                         class="img-fluid" alt="" loading="lazy" /></a>
-                                                   <a class="me-2" href="#" data-bs-toggle="tooltip"
-                                                      data-bs-placement="top" title="Think"><img
-                                                         src="images/icon/05.png" class="img-fluid" alt=""
-                                                         loading="lazy" /></a>
-                                                   <a class="me-2" href="#" data-bs-toggle="tooltip"
-                                                      data-bs-placement="top" title="Sade"><img src="images/icon/06.png"
-                                                         class="img-fluid" alt="" loading="lazy" /></a>
-                                                   <a class="me-2" href="#" data-bs-toggle="tooltip"
-                                                      data-bs-placement="top" title="Lovely"><img
-                                                         src="images/icon/07.png" class="img-fluid" alt=""
-                                                         loading="lazy" /></a>
-                                                </div>
                                              </div>
                                           </div>
                                           <div class="total-like-block ms-2 me-3">
                                              <div class="dropdown">
-                                                <span class="dropdown-toggle" data-bs-toggle="dropdown"
-                                                   aria-haspopup="true" aria-expanded="false" role="button">
-                                                   140 Likes
+                                                <span class="dropdown-toggle" id="post_likes_push">
                                                 </span>
                                              </div>
                                           </div>
@@ -1233,10 +1066,12 @@
    <!--lottie Script -->
    <script src="js/lottie.js"></script>
    <!--select2 Script -->
-   <script src="js/select2.js"></script>
+   <script src="js/select2.js"></script>   
+   <!--moment Script -->
+   <script src="vendor/moment.min.js"></script>
    <!--common JS-->
    <script src="js/common.js"></script>
-   <script src="js/community.js"></script>
+   <script src="js/my_post.js"></script>
 
 
 </body>

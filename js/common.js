@@ -12,16 +12,19 @@ const redirect = (link, redirect = false) => {
 const detect_acc_type = () => {
     $.post(api_url + "/detect_user", { email: email }, function (data, status) {
         if (data == "foundation") {
+            global_user_type="foundation"
             global_course = data
             $(".jobs_pg,.nism_pg").hide()
             $("#acc_type").html("Foundation Course")
         }
         else if (data == "pro partial") {
+            global_user_type="pro partial"
             global_course = data
             $(".jobs_pg,.nism_pg").hide()
             $("#acc_type").html("Pro Mentorship")
         }
         else if (data == "pro full") {
+            global_user_type="pro full"
             global_course = data
             $("#acc_type").html("Pro Mentorship")
         }
