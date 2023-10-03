@@ -32,6 +32,13 @@
    <link rel="stylesheet" href="css/customizer.css">
    <link rel="stylesheet" href="css/bstreeview.css">
 
+   <!-- Quill Reader -->
+   <link href="//cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+   <link href="//cdn.quilljs.com/1.3.6/quill.bubble.css" rel="stylesheet">
+
+   <!-- jstree -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+
    <style>
       .material-symbols-outlined {
          font-variation-settings:
@@ -421,7 +428,8 @@
                                     style="max-height:80vh; overflow-x: hidden; overflow-y: auto;">
                                     <div class="row">
                                        <div class="col-12">
-                                          <div id="tree"></div>
+                                          <!-- <div id="tree"></div> -->
+                                          <div id="jstree"></div>
                                        </div>
                                     </div>
                                  </div>
@@ -432,7 +440,7 @@
                   </div>
                </div>
                <div class="col-lg-9">
-                  <div class="container-fluid" id="welcome_to_classes_container">
+                  <div class="container-fluid" id="access_denied_page">
                      <div class="row">
                         <div class="col-sm-12 col-lg-12">
                            <div class="card">
@@ -454,13 +462,13 @@
                         </div>
                      </div>
                   </div>
-                  <div class="container-fluid" id="main_course_content_container" style="display: none;">
+                  <div class="container-fluid" id="quill_reader_div" style="display: none; max-height:90vh; overflow-x: hidden; overflow-y: auto;">
                      <div class="row">
                         <div class="col-md-12">
                            <div id="post-modal-data" class="card card-block card-stretch card-height">
                               <div class="card-header d-flex justify-content-between">
                                  <div class="header-title">
-                                    <h4 class="card-title">Candlestick patterns and its uses</h4>
+                                    <h4 class="card-title" id="blog_heading">Candlestick patterns and its uses</h4>
                                  </div>
                               </div>
                               <div class="card-body">
@@ -495,51 +503,7 @@
                                           </div>
                                        </div>
                                        <div id="quill_reader" class="ql-container ql-bubble ql-disabled">
-                                          <div class="ql-editor" data-gramm="false" contenteditable="false">
-                                             <p style="font-size: 14px; margin-bottom: 0px;"><strong>Is it fixed that
-                                                   whenever a bullish
-                                                   candle appears the market will go in upward direction only ?</strong>
-                                             </p>
-                                             <p style="font-size: 14px;">no it is not necessary...... it depends where
-                                                the candle is formed if such candle is formed near the support area and
-                                                bullish candle is seen there are chances that stock might bounce from
-                                                here</p>
-                                             <p style="font-size: 14px; margin-bottom: 0px;"><strong>Where should
-                                                   morning star pattern
-                                                   formed?</strong></p>
-                                             <p style="font-size: 14px;">a morning star pattern is formed after a good
-                                                downtrend when exhaustion is spotted or near support area.. morning star
-                                                forms following a downward trend and it indicates the start of an upward
-                                                climb. It is a sign of a reversal in the previous price trend. Traders
-                                                watch for the formation of a morning star and then seek confirmation
-                                                that a reversal is indeed occurring using additional indicators</p>
-                                             <p style="font-size: 14px; margin-bottom: 0px;"><strong>Why it is called
-                                                   morning star
-                                                   candle?</strong></p>
-                                             <p style="font-size: 14px;">A morning star is a visual pattern, so there
-                                                are no particular calculations to perform. A morning star is a
-                                                three-candle pattern with the low point on the second candle. However,
-                                                the low point is only apparent after the close of the third
-                                                candle.....it is called morning star pattern because it ends the
-                                                downtrend and new journey of uptrend might get started</p>
-                                             <p style="font-size: 14px; margin-bottom: 0px;"><strong>forming Doji in
-                                                   between support &amp;resistance what is the price action we can
-                                                   expect?</strong></p>
-                                             <p style="font-size: 14px;">A doji indicates that there is weakness in
-                                                the stock if it is approching near any support or resistance and trend
-                                                might change from that point and new trend may start</p>
-                                             <p style="font-size: 14px; margin-bottom: 0px;"><strong>what does a candle
-                                                   indicates
-                                                   ?</strong></p>
-                                             <p style="font-size: 14px;">Just like a bar chart, a daily candlestick
-                                                shows the markets open, high, low, and close price for the day. The
-                                                candlestick has a wide part, which is called the "real body." This real
-                                                body represents the price range between the open and close of that days
-                                                trading a candle indicates the interaction between buyers and sellers
-                                                like what exactly happened during that period who were more stronger
-                                                during that session</p>
-                                          </div>
-                                          <div class="ql-clipboard" contenteditable="true" tabindex="-1"></div>
+                                       
                                        </div>
                                     </div>
                                  </div>
@@ -935,11 +899,16 @@
    <script src="js/select2.js"></script>
    <!--font-awesome script-->
    <script src="vendor/@fortawesome/fontawesome-free/js/all.min.js"></script>
+   <!-- Quill Reader-->
+   <script src="js/quill.js"></script>
+   <!-- Js Tree -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
    <!--common JS-->
    <script src="js/common.js"></script>
+   <script src="js/classes.js"></script>
    <script src="js/bstreeview.js"></script>
 
-   <script>
+   <!-- <script>
       $(function () {
 
          var json = [
@@ -1048,7 +1017,7 @@
             openNodeLinkOnNewTab: true
          });
       });
-   </script>
+   </script> -->
 
 
 </body>
