@@ -417,15 +417,15 @@
                                           <div class="col-md-12">
                                              <div class="form-group">
                                                 <label class="form-label">Name: *</label>
-                                                <input type="text" id="ua_1" class="form-control" name="Name" autocomplete="off"
-                                                   oninput="validateName(this)">
+                                                <input type="text" id="ua_1" class="form-control" name="Name"
+                                                   autocomplete="off" oninput="validateName(this)">
                                              </div>
                                           </div>
                                           <div class="col-md-6">
                                              <div class="form-group">
                                                 <label class="form-label">WhatsApp Number: *</label>
-                                                <input type="text" id="ua_2" class="form-control" name="number" autocomplete="off"
-                                                   oninput="validateNumber(this)">
+                                                <input type="text" id="ua_2" class="form-control" name="number"
+                                                   autocomplete="off" oninput="validateNumber(this)">
                                              </div>
                                           </div>
                                           <div class="col-md-6">
@@ -443,10 +443,19 @@
                                                 <span id="error_message" style="color:red"></span>
                                              </div>
                                           </div>
+                                          <div class="col-5 mx-auto text-center" style="margin-top:28px">
+                                             <div class=""><span>Give Us Rating</span></div>
+                                             <div id="rating"><input type="hidden" name="rating" value="4">
+                                                <img class="star" src="images/selectedStar.png" data-position="1">
+                                                <img class="star" src="images/selectedStar.png" data-position="2">
+                                                <img class="star" src="images/selectedStar.png" data-position="3">
+                                                <img class="star" src="images/selectedStar.png" data-position="4">
+                                                <img class="star" src="images/unselectedStar_white.png" data-position="5">
+                                             </div>
+                                          </div>
                                        </div>
                                     </div>
-                                    <button id="submit_btn"
-                                       class="btn btn-primary float-end">Submit</button>
+                                    <button id="submit_btn" class="btn btn-primary float-end">Submit</button>
                                     <button type="reset" id="clear_btn"
                                        class="btn btn-secondary float-end me-2">Clear</button>
                                  </form>

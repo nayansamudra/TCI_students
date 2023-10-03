@@ -68,6 +68,12 @@ $(document).on('click', '#mode_nav', function () {
         $('#mode_text_mobile').text('dark_mode')
         $('body').attr('class', 'theme-color-default dark')
     }
+
+    if ($('body').hasClass('dark')) {
+        $('#rating img[src="images/unselectedStar_black.png"]').attr('src', 'images/unselectedStar_white.png');
+    } else if ($('body').hasClass('light')) {
+        $('#rating img[src="images/unselectedStar_white.png"]').attr('src', 'images/unselectedStar_black.png');
+    }
 })
 
 $(document).on('click', '#mode_nav_mobile', function () {
@@ -83,6 +89,12 @@ $(document).on('click', '#mode_nav_mobile', function () {
         $('#mode_text').text('dark_mode')
         $('#mode_text_mobile').text('dark_mode')
         $('body').attr('class', 'theme-color-default dark')
+    }
+
+    if ($('body').hasClass('dark')) {
+        $('#rating img[src="images/unselectedStar_black.png"]').attr('src', 'images/unselectedStar_white.png');
+    } else if ($('body').hasClass('light')) {
+        $('#rating img[src="images/unselectedStar_white.png"]').attr('src', 'images/unselectedStar_black.png');
     }
 })
 
