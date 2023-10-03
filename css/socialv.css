@@ -14523,7 +14523,7 @@ fieldset:disabled .btn {
 }
 .profile-img img {
   border-radius: 50rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
   height: auto;
 }
 ul.header-nav {
@@ -24325,4 +24325,33 @@ Common JS
 }
 .delete_dropdown {
   display: none !important;
+}
+
+/*---------------
+  Profile.html
+----------------*/
+
+.profile_page_h6,
+#acc_posts,
+#acc_likes {
+  font-size: 1.5em;
+}
+
+@media (max-width:992px) {
+  .profile_page_social-info {
+    margin-top: 0;
+  }
+  .profile_page_profile_info {
+    padding-top: 0 !important;
+  }
+}
+
+@media (max-width:768px) {
+  #background_banner_image{
+    max-height: 150px;
+  }
+}
+
+.avatar_select_border {
+  border: 2px solid green !important;
 }

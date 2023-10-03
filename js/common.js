@@ -36,11 +36,13 @@ const get_avatar = () => {
     $.post(api_url + "/get_avatar", { email: email }, function (data, status) {
         data = data[0]
         $("#avatar_image").attr("src", data[0])
+        $("#profile_img").attr("src", data[0])
 
         if (data[1] == "0" || data[1] == "") {
             data[1] = "Student"
         }
         $("#acc_name").text(data[1])
+        $("#profile_name").text(data[1])
         $("#acc_name2").text("Hello " + data[1])
     })
 }
