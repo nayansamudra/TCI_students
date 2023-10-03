@@ -24225,6 +24225,16 @@ h6 {
   border-radius: 5px;
 }
 
+.theme-color-default.dark .ql-container1.ql-bubble1 p strong,
+.theme-color-default.dark .ql-container1.ql-bubble1 p span{
+  color: #c7c7c7 !important;
+}
+
+.theme-color-default.light .ql-container1.ql-bubble1 p strong,
+.theme-color-default.light .ql-container1.ql-bubble1 p span{
+  color: rgb(51, 51, 51) !important;
+}
+
 /*---------- 
 classes page 
 -----------*/
@@ -24298,4 +24308,21 @@ Common JS
 ---------*/
 .toast-container.position-fixed {
   z-index: 1200;
+}
+
+/*------------------
+  All temp Hidden
+------------------*/
+
+.iq-search-bar form {
+  display: none !important;
+}
+.hide_notification {
+  display: none !important;
+}
+#block-3 {
+  display: none !important;
+}
+.delete_dropdown {
+  display: none !important;
 }

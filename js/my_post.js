@@ -123,6 +123,7 @@ const upload_post = () => {
         success: function (data) {
             if (data == "success") {
                 toast_function("success", "Post Uploaded Successfully!")
+                $('#image_loader').attr('style', 'display:block')
                 get_my_posts(loader_gif_visible)
             }
             else if (data == "Limit exceeded") {
@@ -190,6 +191,8 @@ const shorten = (text, length = 80) => {
 
 const get_my_posts = (pgno = 1) => {
 
+    $('#image_loader').show()
+
     var filter = clicked_category
 
     // get count
@@ -197,10 +200,19 @@ const get_my_posts = (pgno = 1) => {
     var offset = offset_arr[pgno - 1]
     if (offset == 0) {
         $('#post_append').empty()
+    } 
+    
+    if(offset == offset_arr[offset_arr.length - 1]) {
+        $('#image_loader').hide()
     }
+    else {
+        $('#image_loader').show()
+    }
+
     $.post(api_url + "/get_my_posts", { email: email, filter: filter, offset: offset }, function (data, status) {
         if(data == null) {
             $('#image_loader').attr('style', 'display:none')
+            toast_function("warning","No post related to your search")
             return;
         }
 
@@ -215,7 +227,7 @@ const get_my_posts = (pgno = 1) => {
             data[i][2] = shorten(data[i][2])
 
             if ($('#Grid_View h6').hasClass('selected')) {
-                var str = ` <div class="col-lg-6">
+                var str = ` <div class="col-lg-6 col-xl-4">
                 <div class="card card-transparent card-block card-stretch card-height blog-grid blog-single community_post" id="${data[i][0]}">
                    <div class="card-body p-0 position-relative">
                       <div class="image-block" style="height:400px; overflow:hidden">

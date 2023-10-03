@@ -76,7 +76,7 @@ $(document).on('click', '#Detail_View', function (e) {
     // -------------- For Temporary
     str = '<span style="font-size:48px; text-align:center">Comming Soon ...</span>'
     $("#post_append").append(str)
-    $('#image_loader').attr('style', 'display:none')
+    // $('#image_loader').attr('style', 'display:none')
     // -------------- For Temporary
     e.preventDefault();
 });
@@ -109,7 +109,8 @@ const upload_post = () => {
         success: function (data) {
             if (data == "success") {
                 toast_function("success", "Post Uploaded Successfully!")
-                get_my_posts(loader_gif_visible)
+                $('#image_loader').attr('style', 'display:block')
+                get_all_posts(loader_gif_visible)
             }
             else if (data == "Limit exceeded") {
                 toast_function("warning", "Post Limit Exceeded!")
@@ -179,6 +180,8 @@ const shorten = (text, length = 80) => {
 
 const get_all_posts = (pgno = 1) => {
 
+    $('#image_loader').show()
+
     var filter = clicked_category
 
     // get count
@@ -187,10 +190,20 @@ const get_all_posts = (pgno = 1) => {
     if (offset == 0) {
         $('#post_append').empty()
     }
+    
+    if(offset == offset_arr[offset_arr.length - 1]) {
+        $('#image_loader').hide()
+    }
+    else {
+        $('#image_loader').show()
+    }
     $.post(api_url + "/get_all_posts", { email: email, filter: filter, offset: offset }, function (data, status) {
-        // $.post("http://localhost/tci_students/EXTRA/get_all_posts.txt", function (data, status) {
-        // data = JSON.parse(data)
-        console.log(data)
+
+        if(data == null) {
+            $('#image_loader').attr('style', 'display:none')
+            toast_function("warning","No post related to your search")
+            return;
+        }
 
         var liked_posts = JSON.parse(data[data.length - 1])
 

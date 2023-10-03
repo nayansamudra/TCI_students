@@ -84,7 +84,7 @@
                      <i class="material-symbols-outlined" id="mode_text">dark_mode</i>
                   </a>
                </li>
-               <li class="nav-item dropdown d-none d-lg-block">
+               <li class="nav-item dropdown d-none d-lg-block hide_notification">
                   <a href="javascript:void(0);" class="search-toggle dropdown-toggle d-flex align-items-center"
                      id="notification-drop" data-bs-toggle="dropdown">
                      <i class="material-symbols-outlined">notifications</i>
@@ -265,7 +265,7 @@
                         <i class="material-symbols-outlined" id="mode_text_mobile">dark_mode</i>
                      </a>
                   </li>
-                  <li class="icon-class">
+                  <li class="icon-class hide_notification">
                      <a href="notification.html" class="">
                         <span class="material-symbols-outlined">notifications</span>
                      </a>
@@ -536,7 +536,7 @@
                <div class="col-lg-9">
                   <div class="container-fluid" id="post_content">
                      <div class="row" id="post_append">
-                        
+
                      </div>
                   </div>
                   <!-- Create Post Form -->
@@ -970,15 +970,15 @@
                               <div class="user-post-data">
                                  <div class="d-flex justify-content-between">
                                     <div class="me-3">
-                                       <img class="rounded-circle img-fluid" src="images/user/03.jpg" width="50px" alt=""
-                                          loading="lazy" id="post_avatar" />
+                                       <img class="rounded-circle img-fluid" src="images/user/03.jpg" width="50px"
+                                          alt="" loading="lazy" id="post_avatar" />
                                     </div>
                                     <div class="w-100">
                                        <div class="d-flex justify-content-between">
                                           <div class="">
                                              <h5 class="mb-0 d-inline-block" id="post_author">
-                                                <img src="images/verified.png"
-                                                   width="20px"></h5>
+                                                <img src="images/verified.png" width="20px">
+                                             </h5>
                                              <p class="mb-0 text-primary" id="post_time_push"></p>
                                           </div>
                                        </div>
@@ -991,9 +991,8 @@
                                  <p id="post_msg_push"></p>
                               </div>
                               <div class="user-post">
-                                 <img src="images/10.jpg" id="post_img" alt="post-image"
-                                       class="img-fluid rounded w-100" loading="lazy"
-                                       style="max-height: 350px; object-fit: contain;" />
+                                 <img src="images/10.jpg" id="post_img" alt="post-image" class="img-fluid rounded w-100"
+                                    loading="lazy" style="max-height: 350px; object-fit: contain;" />
                               </div>
                               <div class="comment-area mt-3">
                                  <div class="d-flex align-items-center flex-wrap">
@@ -1066,7 +1065,7 @@
    <!--lottie Script -->
    <script src="js/lottie.js"></script>
    <!--select2 Script -->
-   <script src="js/select2.js"></script>   
+   <script src="js/select2.js"></script>
    <!--moment Script -->
    <script src="vendor/moment.min.js"></script>
    <!--common JS-->
