@@ -67,7 +67,7 @@ const fetch_tree = () => {
 
 const read_single_blog = (ts) => {
     $.post(api_url + "/blogs/fetch_blog", { email: email, ts: ts }, function (data, status) {
-        
+
         if (data == "access denied") {
             $("#access_denied_page").show()
             $("#quill_reader_div").hide()
@@ -86,9 +86,9 @@ const read_single_blog = (ts) => {
         }
 
 
-        
+
         quill_r.setContents(data[0][7]);
-        
+
         global_frame_1 = data[0][2]
         global_frame_2 = data[0][3]
         $("#blog_heading").html(data[0][4])
@@ -107,6 +107,8 @@ $(document).ready(function () {
 
     global_avatar_sel = "1"
     global_course = "fetch_pending"
+
+    course_click = 0
 
     //quil instance for reader
     quill_r = new Quill('#quill_reader', {
@@ -128,3 +130,9 @@ $(document).ready(function () {
     fetch_tree()
 
 });
+
+
+$(document).on('click', '#course_click', function () {
+    course_click = 1
+    $('.card-title.blinking-text').removeClass('blinking-text')
+})

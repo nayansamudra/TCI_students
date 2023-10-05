@@ -86,6 +86,8 @@ const upload_post = () => {
     var tag = $("#ip_tag").val()
     var description = $("#feedback_text").val()
 
+    if (title.length >= 50) { toast_function("warning", "Title length cannot exceed 50 character"); return }
+
     // input validation
     if (title == "" || description == "") { toast_function("warning", "Please Enter all fields!"); return }
 
@@ -133,7 +135,7 @@ const get_single_post = (ts) => {
         $("#post_msg_push").text(data[0][2])
         $("#post_img").attr("src", 'https://students.tradingcafeindia.com' + data[0][5])
         $("#post_img_a").attr("href", data[0][5])
-        $("#post_likes_push").text(data[0][6] + 'Likes')
+        $("#post_likes_push").text(data[0][6] + ' Likes')
 
         $("#post_author").text(data[2][0])
         if (data[2][1] == "") { data[2][1] = "TCI Student" }
@@ -178,6 +180,19 @@ const shorten = (text, length = 80) => {
     return text + "...";
 }
 
+const shorten1 = (text, length = 50) => {
+    if (text == null) {
+        return "";
+    }
+    if (text.length <= length) {
+        return text;
+    }
+    text = text.substring(0, length);
+    last = text.lastIndexOf(" ");
+    text = text.substring(0, last);
+    return text + "...";
+}
+
 const get_all_posts = (pgno = 1) => {
 
     $('#image_loader').show()
@@ -190,8 +205,8 @@ const get_all_posts = (pgno = 1) => {
     if (offset == 0) {
         $('#post_append').empty()
     }
-    
-    if(offset == offset_arr[offset_arr.length - 1]) {
+
+    if (offset == offset_arr[offset_arr.length - 1]) {
         $('#image_loader').hide()
     }
     else {
@@ -199,9 +214,9 @@ const get_all_posts = (pgno = 1) => {
     }
     $.post(api_url + "/get_all_posts", { email: email, filter: filter, offset: offset }, function (data, status) {
 
-        if(data == null) {
+        if (data == null) {
             $('#image_loader').attr('style', 'display:none')
-            toast_function("warning","No post related to your search")
+            toast_function("warning", "No post related to your search")
             return;
         }
 
@@ -209,20 +224,21 @@ const get_all_posts = (pgno = 1) => {
 
         var spl = ""
         for (var i = 0; i < data.length - 1; i++) {
-            // for (var i = 0; i < 1; i++) {
+            
             if (liked_posts.includes(data[i][0])) { spl = "liked" }
             else { spl = "" }
 
+            data[i][1] = shorten1(data[i][1])
             data[i][2] = shorten(data[i][2])
 
             if ($('#Grid_View h6').hasClass('selected')) {
                 var str = ` <div class="col-lg-6 col-xl-4">
                 <div class="card card-transparent card-block card-stretch card-height blog-grid blog-single community_post" id="${data[i][0]}">
                    <div class="card-body p-0 position-relative">
-                      <div class="image-block" style="height:400px; overflow:hidden">
-                         <img src="https://students.tradingcafeindia.com${data[i][5]}" class="img-fluid rounded w-100" alt="blog-img" style="object-fit: contain; max-height:400px">
+                      <div class="product-preview-image">
+                         <img src="https://students.tradingcafeindia.com${data[i][5]}" class="view_post_small img-fluid" alt="blog-img">
                       </div>
-                      <div class="blog-description p-3">
+                      <div class="blog-description1 px-2 py-2" style="position:relative">
                          <div class="date"><a href="#" tabindex="-1" class="post-category" data-id="${data[i][0]}">#${data[i][4]}</a></div>
                          <h5 class="mb-2 post-name" data-id="${data[i][0]}">${data[i][1]}</h5>
                          <span class="post-description">${data[i][2]}</span>
@@ -236,6 +252,7 @@ const get_all_posts = (pgno = 1) => {
                       </div>
                    </div>
                 </div></div>`
+
             } else if ($('#Detail_View h6').hasClass('selected')) {
                 var str = ''
             }

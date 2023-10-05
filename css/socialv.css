@@ -10403,8 +10403,8 @@ fieldset:disabled .btn {
   min-height: 4.688rem;
 }
 .navbar-list li > a > img {
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 .navbar-list li:last-child > a {
   padding-right: 0;
@@ -10414,6 +10414,7 @@ fieldset:disabled .btn {
 }
 .navbar-list li .caption {
   line-height: 1rem;
+  margin-right: 1rem;
 }
 .navbar-list li.iq-nav-user {
   display: flex;
@@ -11295,7 +11296,7 @@ fieldset:disabled .btn {
   background-color: rgba(var(--bs-primary-rgb), 0.2);
 }
 ::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0.25rem;
   height: 0.5rem;
   border-radius: 20px;
 }
@@ -12323,8 +12324,8 @@ fieldset:disabled .btn {
   z-index: 1080;
 }
 #loading-center {
-  background: url(../images/loader.png) no-repeat scroll center center;
-  background-size: 20%;
+  background: url(../images/tci_logo.png) no-repeat scroll center center;
+  background-size: 10%;
   width: 100%;
   height: 100%;
   position: relative;
@@ -21820,7 +21821,7 @@ button.bg-soft-dark:hover {
   color: #c7c7c7;
 }
 .dark #loading-center {
-  background-image: url(../images/loader-dark.png);
+  background-image: url(../images/tci_logo.png);
 }
 .dark .nav {
   background: #0f0f0f;
@@ -24254,9 +24255,37 @@ classes page
   }
 }
 
-.theme-color-default.dark .jstree-leaf{
-  color: blue !important;
+.theme-color-default.light .jstree-leaf{
+  color: #0088ff !important;
   font-weight: 600 !important;
+}
+
+.theme-color-default.dark .jstree-leaf{
+  color: #50b5ff !important;
+  font-weight: 600 !important;
+}
+
+.theme-color-default.light .jstree-default .jstree-clicked {
+  background: #e6f3ff !important;
+}
+
+.theme-color-default.dark .jstree-default .jstree-clicked {
+  background: #383838 !important;
+}
+
+.theme-color-default.dark .jstree-default .jstree-wholerow-hovered {
+  background: #383838 !important;
+}
+
+.theme-color-default.dark .jstree a:hover {
+  background: #383838 !important;
+}
+
+.theme-color-default.dark #quill_reader span,
+.theme-color-default.dark #quill_reader p,
+.theme-color-default.dark #quill_reader strong {
+  color: #c7c7c7 !important;
+  background-color: transparent !important;
 }
 
 .vid_bg{
@@ -24316,6 +24345,14 @@ classes page
   height: auto !important;
   padding: 3px;
   width:80%
+}
+
+.jstree-default .jstree-node {
+  margin-left: 15px !important;
+}
+
+.jstree-node.jstree-open.jstree-last {
+  margin-left: 0 !important;
 }
 
 /*------------
@@ -24420,3 +24457,56 @@ Common JS
   border: 2px solid green !important;
 }
 
+.view_post_small {
+  object-fit: contain;
+  border-radius: 12px;
+  padding: 4px;
+  width: 100%;
+  height: 180px;
+}
+
+.product-preview-image {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-top: 1px;
+}
+
+/*-------------------------------- 
+Community and Message Center Page
+----------------------------------*/
+.theme-color-default.dark .blog-description1 {
+  background-color: #000;
+  margin: 5px;
+}
+
+.theme-color-default.light .blog-description1 {
+  background-color: #fff;
+  margin: 5px;
+}
+
+@media (min-width:1200px) {
+  .theme-color-default.dark .blog-description1 {
+    height: 202px;
+  }
+  
+  .theme-color-default.light .blog-description1 {
+    height: 202px;
+  }
+}
+
+@media (min-width:992px) and (max-width:1200px ){
+  .theme-color-default.dark .blog-description1 {
+    height: 165px;
+  }
+  
+  .theme-color-default.light .blog-description1 {
+    height: 165px;
+  }
+}
+
+#blog_promotion {
+  display: none;
+}

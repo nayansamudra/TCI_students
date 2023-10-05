@@ -269,7 +269,6 @@ $(document).ready(function () {
     };
     toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl, toastoptions))
 
-
     // ------- For Theme
     theme = localStorage.getItem('theme')
     if (theme == null) {
