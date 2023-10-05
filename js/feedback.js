@@ -77,6 +77,9 @@ $(document).on("mouseenter", ".star", function () {
 });
 
 $(document).ready(function () {
+
+    $('#feedback_html').addClass('active')
+
     if ($('body').hasClass('dark')) {
         $('#rating img[src="images/unselectedStar_black.png"]').attr('src', 'images/unselectedStar_white.png');
     } else if ($('body').hasClass('light')) {

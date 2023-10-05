@@ -266,6 +266,9 @@ const get_all_posts = (pgno = 1) => {
 
 
 $(document).ready(function () {
+
+    $('#community_html').addClass('active')
+
     loader_gif_visible = 1
     clicked_category = "all"
     get_all_posts()

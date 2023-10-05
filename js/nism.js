@@ -192,6 +192,9 @@ const read_single_blog = (ts) => {
 }
 
 $(document).ready(function () {
+
+    $('#nism_html').addClass('active')
+
     fetch_nism_blog_list()
 
     quill_r1 = new Quill('#quill_reader_1', {

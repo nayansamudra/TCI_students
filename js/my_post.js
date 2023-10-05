@@ -294,6 +294,9 @@ const get_my_posts = (pgno = 1) => {
 $(document).ready(function () {
     loader_gif_visible = 1
     clicked_category = "all"
+
+    $('#my_post_html').addClass('active')
+
     get_my_posts()
 
     var options = {

@@ -104,5 +104,6 @@ function linkify(text) {
 }
 
 $(document).ready(function () {
+   $('#jobs_html').addClass('active')
     fetch_jobs()
 })

@@ -12,19 +12,19 @@ const redirect = (link, redirect = false) => {
 const detect_acc_type = () => {
     $.post(api_url + "/detect_user", { email: email }, function (data, status) {
         if (data == "foundation") {
-            global_user_type="foundation"
+            global_user_type = "foundation"
             global_course = data
-            $(".jobs_pg,.nism_pg").hide()
+            $(".jobs_html,.nism_html").hide()
             $("#acc_type").html("Foundation Course")
         }
         else if (data == "pro partial") {
-            global_user_type="pro partial"
+            global_user_type = "pro partial"
             global_course = data
-            $(".jobs_pg,.nism_pg").hide()
+            $(".jobs_html,.nism_html").hide()
             $("#acc_type").html("Pro Mentorship")
         }
         else if (data == "pro full") {
-            global_user_type="pro full"
+            global_user_type = "pro full"
             global_course = data
             $("#acc_type").html("Pro Mentorship")
         }
@@ -240,12 +240,45 @@ $(document).on('click', '.sidebar-toggle', function (e) {
 })
 
 /*----------------------------
+    Creating Navbar
+-----------------------------*/
+
+const create_navbar = () => {
+    navbar_array = [
+        ["message_center.html", "message", "Message Center"],
+        ["community.html", "communities", "Community"],
+        ["tci_dhan.html", "partner_exchange", "TCI-DHAN collaboration"],
+        ["my_post.html", "post_add", "My Posts"],
+        ["support.html", "support_agent", "Support Portal"],
+        ["upgrade.html", "upgrade", "Upgrade"],
+        ["jobs.html", "work", "Jobs"],
+        ["nism.html", "mountain_flag", "NISM Exam Prep"],
+        ["classes.html", "school", "Classes"],
+        ["feedback.html", "feedback", "Feedback"]
+    ]
+
+    for (var i = 0; i < navbar_array.length; i++) {
+        var str = `<li class="nav-item ${navbar_array[i][0].replace(/\./g, "_")}">
+            <a class="nav-link" id="${navbar_array[i][0].replace(/\./g, "_")}" aria-current="page" href="${navbar_array[i][0]}">
+               <i class="icon material-symbols-outlined">
+               ${navbar_array[i][1]}
+               </i>
+               <span class="item-name">${navbar_array[i][2]}</span>
+            </a>
+        </li>`
+
+        $('#sidebar-menu').append(str)
+    }
+}
+
+/*----------------------------
     When document is ready
 ----------------------------*/
 
 $(document).ready(function () {
 
     email = "dknaix@gmail.com"
+    create_navbar()
     detect_acc_type()
     get_avatar()
 

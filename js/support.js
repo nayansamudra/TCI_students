@@ -182,6 +182,7 @@ const gen_ticket = () => {
 
 
 $(document).ready(function () {
+    $('#support_html').addClass('active')
     fetch_tickets()
 });
 

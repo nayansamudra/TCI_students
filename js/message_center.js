@@ -111,6 +111,7 @@ function linkify(text) {
 
 
 $(document).ready(function () {
+    $('#message_center_html').addClass('active')
     get_link()
     get_msg()
 });

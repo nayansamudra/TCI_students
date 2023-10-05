@@ -212,81 +212,12 @@ const foundation_upgrade = () => {
 }
 
 
-detect_acc_type = () => {
-    let email = getCookie("user")
-    $.post(api_url + "/detect_user", { email: email }, function (data, status) {
-        if (data == "foundation") {
-            global_course = data
-            $(".jobs_pg").hide()
-            $("#acc_type,#acc_type2").html("<i class='fas fa-graduation-cap'></i> Foundation Course")
-            // notf_permission()
-            // check_status()
-        }
-        else if (data == "pro partial") {
-            global_course = data
-            $(".jobs_pg").hide()
-            $("#acc_type,#acc_type2").html("<i class='fas fa-graduation-cap'></i> Pro Mentorship")
-            // notf_permission()
-            // check_status()
-        }
-        else if (data == "pro full") {
-            global_course = data
-            $("#acc_type,#acc_type2").html("<i class='fas fa-graduation-cap'></i> Pro Mentorship")
-            // notf_permission()
-            // check_status()
-        }
-        else { $(".jobs_pg").hide() }
 
-        get_avatar(upgrade_course)
-    })
-}
-
-get_stats = () => {
-    let email = getCookie("user")
-    $.post(api_url + "/user_stats", { email: email }, function (data, status) {
-        console.log(data)
-        data = eval(data)
-        $("#acc_posts").text(data[0])
-        $("#acc_likes").text(data[1])
-    })
-}
-
-
-get_avatar = (callback = () => { }) => {
-
-    let email = getCookie("user")
-    $.post(api_url + "/get_avatar", { email: email }, function (data, status) {
-        data = data[0]
-        $("#avatar_big,#avatar_small,#avatar_mob").attr("src", data[0])
-        if (data[1] == "0" || data[1] == "") {
-            data[1] = "Student"
-            global_name = "Student"
-        }
-        $("#acc_name").text(data[1])
-        global_name = data[1]
-        $("#acc_name2,#acc_name_mob").text("Hi " + data[1])
-
-        callback()
-    })
-}
 
 
 $(document).ready(function () {
-    console.log("Ready!")
-    // $(".classes_icon").hide()
 
-    // reg_worker()
-    $("#status_btn_text1").hide()
-    $("#status_btn_text2").hide()
-
-    // broadcast channel reviever only
-    // const channel = new BroadcastChannel('sw-messages');
-    // channel.addEventListener('message', event => {
-    //     console.log('Received', event.data);
-    // 		console.log('Received', event.data['subs']);
-    // 		subscription=JSON.stringify(event.data['subs'])
-    //
-    // });
+    $('#upgrade_html').addClass('active')
 
     // global declaration
     global_avatar_sel = "1"

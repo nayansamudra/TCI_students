@@ -105,6 +105,8 @@ const read_single_blog = (ts) => {
 
 $(document).ready(function () {
 
+    $('#classes_html').addClass('active')
+
     global_avatar_sel = "1"
     global_course = "fetch_pending"
 
