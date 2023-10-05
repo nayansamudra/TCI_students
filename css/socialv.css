@@ -24510,3 +24510,7 @@ Community and Message Center Page
 #blog_promotion {
   display: none;
 }
+
+.light .modal .card {
+  background-color: #ebebeb;
+}
